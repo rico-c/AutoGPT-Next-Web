@@ -131,44 +131,12 @@ const Drawer = ({
 
         <div className="flex flex-col gap-1">
           <hr className="my-5 border-white/20" />
-          {authEnabled && (
-            <AuthItem session={session} signIn={signIn} signOut={signOut} />
-          )}
           <DrawerItem
             icon={<FaQuestionCircle />}
             text="help"
             onClick={showHelp}
           />
           <DrawerItem icon={<FaCog />} text="settings" onClick={showSettings} />
-          {showDonation && (
-            <DrawerItem
-              icon={<FaDonate />}
-              text="donation"
-              onClick={showWeChatPay}
-            />
-          )}
-          {authEnabled && (
-            <Fragment>
-              <DrawerItem
-                icon={<FaQq />}
-                text="QQ"
-                target="_blank"
-                onClick={showQQ}
-              />
-              <DrawerItem
-                icon={<FaDiscord />}
-                text="Discord"
-                href="https://discord.gg/Xnsbhg6Uvd"
-                target="_blank"
-              />
-            </Fragment>
-          )}
-          <DrawerItem
-            icon={<FaGithub />}
-            text="GitHub"
-            href="https://github.com/Dogtiti/AutoGPT-Next-Web"
-            target="_blank"
-          />
           <DrawerItem
             icon={<FaLanguage />}
             text="language"
