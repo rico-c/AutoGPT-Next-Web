@@ -137,11 +137,11 @@ const Drawer = ({
             onClick={showHelp}
           />
           <DrawerItem icon={<FaCog />} text="settings" onClick={showSettings} />
-          <DrawerItem
+<!--           <DrawerItem
             icon={<FaLanguage />}
             text="language"
             onClick={handleLanguageChange}
-          />
+          /> -->
           {env.NEXT_PUBLIC_FF_SUB_ENABLED ||
             (router.query.pro && (
               <ProItem
